@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class box {
+private:
+    int length;
+
+public:
+    box() {
+        length = 0;
+    }
+
+    friend int printLength(const box &other); // Declare printLength as a friend function
+};
+
+int printLength(const box &other) { // Define printLength as a void function
+    return other.length  + 10;
+}
+
+int main() {
+    box b;
+    cout<<printLength(b); // Call the function directly without trying to print its return value
+    return 0;
+}

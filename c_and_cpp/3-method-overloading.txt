@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class A{
+    public:
+    void display(int a, int b){
+        cout<< a + b;
+    }
+    
+    void display(int a, int b, int c){
+        cout<< a + b + c;
+    }
+};
+
+int main() {
+    A a;
+    a.display(105, 202, 5);
+    return 0;
+}

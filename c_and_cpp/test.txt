@@ -1,0 +1,29 @@
+function lower(string){
+    lower 
+    65  93 + 32
+}
+
+function upper(string){
+    upper 
+    65  93 - 32
+}
+
+function swapcase(string){
+    swapcase 
+    if (65  93 + 32){
+        lower
+    } else {
+        65  93 - 32
+    }
+}
+
+input 1
+if i == 1:
+    lower()
+else if (i == 2):
+    upper()
+else if (i == 3):
+    swapcase()
+else:
+    print(invalid input)
+    

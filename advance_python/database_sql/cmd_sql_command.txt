@@ -1,0 +1,39 @@
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+Enter a table name: users
+y/n: y
+Enter a field config : user_id int auto_increment primary key
+y/n: y
+Enter a field config : first_name varchar(255) not null
+y/n: y
+Enter a field config : last_name varchar(255) not null
+y/n: y
+Enter a field config : email varchar(255) not null unique key
+y/n: y
+Enter a field config : mobile varchar(25)
+y/n: y
+Enter a field config : age int
+y/n: n
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+(2, 'brijesh', 'gondaliya', 'brijesh@gmail.com', '7676767676', 27)
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+(2, 'brijesh', 'gondaliya', 'brijesh@gmail.com', '7676767676', 27)
+(3, 'imroz', 'khan', 'imroz@gmail.com', '9898989', 25)
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>py main.py
+[2, 'brijesh', 'gondaliya', 'brijesh@gmail.com', '7676767676', 27]
+[3, 'imroz', 'khan', 'imroz@gmail.com', '9898989', 25]
+0
+
+(myvenv) C:\brijesh-py\class\7-30to9-00C_C-\advance_python\database_sql>

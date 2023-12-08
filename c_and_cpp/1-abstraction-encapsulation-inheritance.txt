@@ -1,0 +1,211 @@
+// Abstraction 
+
+#include<iostream>
+using namespace std;
+
+class triangle{
+    private:
+        float length, base;
+
+    public:
+        triangle(float l, float b){
+            length = l;
+            base = b;
+        }
+        float areaOfTriangle(){
+            cout<<"Area of triangle is ="<<(0.5 * length * base)<<endl;
+
+        }
+};
+
+int main(){
+    float len,base;
+    cout<<"Enter your len and base";
+    cin>>len>>base;
+
+    triangle t1(len, base);
+    t1.areaOfTriangle();
+    return 0;
+}
+
+
+// Encapsulation
+
+
+#include<iostream>
+using namespace std;
+
+class triangle{
+    private:
+        float length, base;
+
+    public:
+        int set_value(float l, float b){
+            length = l;
+            base = b;
+        }
+        float get_value(){
+            cout<<"Area of triangle is ="<<(0.5 * length * base)<<endl;
+
+        }
+};
+
+int main(){
+    float len,base;
+    cout<<"Enter your len and base";
+    cin>>len>>base;
+
+    triangle t1;
+    t1.set_value(len, base);
+    t1.get_value();
+    return 0;
+}
+
+
+// single inheritance
+#include<iostream>
+using namespace std;
+
+class A{
+    public:
+    string a(){
+        cout<<"I am from class A"<<endl;
+    }
+};
+
+class B:public A{
+    public:
+    string b(){
+        cout<<"I am from class B"<<endl;
+    }
+};
+
+
+int main(){
+    B obj;
+    obj.b();
+    obj.a();
+    return 0;
+}
+
+
+// multilevel inheritance
+#include<iostream>
+using namespace std;
+
+class A{
+    public:
+    void a(){
+        cout<<"I am from class A"<<endl;
+    }
+};
+
+class B:public A{
+    public:
+    void b(){
+        cout<<"I am from class B"<<endl;
+    }
+};
+
+class C:public B{
+    public:
+    void c(){
+        cout<<"I am from class C"<<endl;
+    }
+};
+
+
+int main(){
+    C obj;
+    obj.b();
+    obj.a();
+    obj.c();
+    return 0;
+}
+
+
+// multiple inheritance
+#include<iostream>
+using namespace std;
+
+class A{
+    public:
+    void a(){
+        cout<<"I am from class A"<<endl;
+    }
+};
+
+class B{
+    public:
+    void b(){
+        cout<<"I am from class B"<<endl;
+    }
+};
+
+class C:public A, public B{
+    public:
+    void c(){
+        cout<<"I am from class C"<<endl;
+    }
+};
+
+
+int main(){
+    C obj;
+    obj.b();
+    obj.a();
+    obj.c();
+    return 0;
+}
+
+
+
+// herarchicale  inheritance
+#include<iostream>
+using namespace std;
+
+class A{
+    public:
+    void a(){
+        cout<<"I am from class A"<<endl;
+    }
+};
+
+class B1:public A{
+    public:
+    void b1(){
+        cout<<"I am from class B1"<<endl;
+    }
+};
+
+class B11:public B1{
+    public:
+    void b11(){
+        cout<<"I am from class B11"<<endl;
+    }
+};
+
+class B12: public B1{
+    public:
+    void b12(){
+        cout<<"I am from class B12"<<endl;
+    }
+};
+
+class B2{
+    public:
+    void b2(){
+        cout<<"I am from class B2"<<endl;
+    }
+};
+
+
+
+
+int main(){
+    B12 obj;
+    obj.b12();
+    obj.b1();
+    obj.a();
+    return 0;
+}
