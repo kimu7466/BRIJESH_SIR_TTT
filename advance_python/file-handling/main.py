@@ -1,5 +1,5 @@
-# file cerate if not exist
-# open('output.txt', 'x')
+file cerate if not exist
+open('output2.txt', 'x')
 
 # write data into a file
 # file = open('output.txt', 'w')
@@ -55,7 +55,7 @@
 # file.close()
 
 
-import os
+# import os
 # import uuid
 
 # os.system('py run.py')
